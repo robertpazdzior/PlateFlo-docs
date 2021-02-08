@@ -1,0 +1,2 @@
+.. automodule:: plateflo.fetbox
+    :members:
