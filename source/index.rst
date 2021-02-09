@@ -6,9 +6,10 @@ matrix-embedded cell lines.
 
 .. toctree::
    :maxdepth: 2
-   :caption: FETbox
+   :caption: Guides
 
    software/fetbox
+   software/scheduler
 
 .. toctree::
    :maxdepth: 2

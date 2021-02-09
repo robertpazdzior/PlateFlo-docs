@@ -1,7 +1,7 @@
 License
 ========
 This project is copyright (2021) of Robert Pazdzior. You are free to modify and
-redistribute all or part of it according to appropriate license(s) outlined
+redistribute all or part of it according to the associated license(s) outlined
 below.
 
 Hardware

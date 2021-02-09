@@ -5,5 +5,6 @@ PlateFlo API Index
     :maxdepth: 2
 
     fetbox
+    scheduler
     ismatec
     serial_io
