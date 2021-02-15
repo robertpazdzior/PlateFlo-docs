@@ -104,3 +104,4 @@ class PrettyPrintIterable(Directive):
 
 def setup(app):
     app.add_directive('pprint', PrettyPrintIterable)
+    app.add_css_file('tweaked_theme.css')

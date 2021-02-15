@@ -1,0 +1,6 @@
+Designator,Component,Number,Cost per unit (EUR),Total cost (EUR),Source of materials,Material
+Perfusion Plates,"Screw, M2.5×8mm, DIN912",1,4.58 [#f1]_ ,4.58 [#f1]_ ,`Conrad <https://www.conrad.at/de/p/toolcraft-1061808-zylinderschrauben-m2-5-8-mm-innensechskant-din-912-edelstahl-a2-100-st-1061808.html>`_,Stainless steel
+,"Hex nut, M2.5, DIN934",1,3.58 [#f1]_ ,3.58 [#f1]_ ,`Conrad <https://www.conrad.at/de/p/toolcraft-to-5371779-sechskantmuttern-m2-5-iso-4035-edelstahl-a2-100-st-1790593.html>`_,Stainless steel
+,"Nunc OmniTray, one-well treated plates w/lids - 60/case",1,350,350,`Thermo-Fischer Scientific <https://www.thermofisher.com/order/catalog/product/165218>`_,PS
+,"P200 pipette tips, non-filtered",4,,,,
+,"PCB milling bit, 2.2 mm",1,9.31,9.31,`Amazon (DE) <https://www.amazon.de/-/en/Nicerio-10-Pieces-Circuit-Carbide-Engraving/dp/B07F7NLP6K>`_,

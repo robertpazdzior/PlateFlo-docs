@@ -111,6 +111,7 @@ Tasks that need only be executed once are created using :class:`.SingleEvent()`
 objects.
 
 The event is executed at the absolute time specified by a ``datetime`` object.
+See the section below on defining event tasks.
 
 .. autoclass:: plateflo.scheduler.SingleEvent
     :noindex:
@@ -118,8 +119,15 @@ The event is executed at the absolute time specified by a ``datetime`` object.
 Recurring Events
 ----------------
     
+Events that take place at regular intervals are created using
+:class:`.RecurringEvent()` objects, which can take several parameters to fine
+tune define their behaviour:
+
 .. autoclass:: plateflo.scheduler.RecurringEvent
     :noindex:
+
+To simplify the definition of daily events that take place at a specific
+clock time, the :class:`.DailyEvent()` class can be used.
 
 .. autoclass:: plateflo.scheduler.DailyEvent
     :noindex:
@@ -165,9 +173,8 @@ are undetermined until the time of execution.
 iii. Adding/Removing Events
 ===========================
 
-``Events`` are added to a :class:`.Scheduler()` using the scheduler using the
-:meth:`.add_event()` method, which returns a serialized ``eventID`` associated
-with that event.
+``Events`` are added to the :class:`.Scheduler()` using the :meth:`.add_event()`
+method, which returns the unique serialized ``eventID`` for that event.
 
 .. code-block:: python
 
@@ -182,7 +189,9 @@ cancel a :class:`.RecurringEvent()`:
 .. code-block:: python
 
     >>> print(sched.events)
-    [{'eventID': 1, 'dateTime': datetime.datetime(2021, 2, 11, 16, 22, 37, 196192), 'event': <plateflo.scheduler.RecurringEvent object at 0x000001F2946FBA90>}]
+    [{'eventID': 1, 
+      'dateTime': datetime.datetime(2021, 2, 11, 16, 22, 37, 196192), 
+      'event': <plateflo.scheduler.RecurringEvent object at 0x000001F2946FBA90>}]
     >>> sched.remove_event(my_event_id)
     >>> print(sched.events)
     []
@@ -231,7 +240,7 @@ Toggle a `FETbox`-attached valve at regular intervals for a few cycles:
     >>> def main():
     >>>     while sched.events:
     >>>         sched.monitor()
-    >>>         sleep(0.05)
+    >>>         sleep(1E-6)
     >>>     fet.kill()
      
     >>> if __name__ == "__main__":

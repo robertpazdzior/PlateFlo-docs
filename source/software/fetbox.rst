@@ -1,4 +1,4 @@
-FETbox Python Module
+FETbox Serial Control
 #####################
 
 Convenience functions for serial control of the *PlateFlo FETbox*
@@ -9,7 +9,8 @@ Convenience functions for serial control of the *PlateFlo FETbox*
 * Hit-and-hold capability for power-efficient solenoid operation
 * Full Arduino output pin control, including PWM functionality
 * Full Arduino digital and analog pin reading functionality
-* Asynchronous serial I/O for non-blocking operation via the :mod:`serial_io` module
+* Asynchronous serial I/O for non-blocking operation via the :mod:`serial_io`
+  module
 * Logging via the base Python ``logging`` module
 
 2. Quick Start
@@ -17,7 +18,8 @@ Convenience functions for serial control of the *PlateFlo FETbox*
 
 Installation
 ==================
-The :mod:`.plateflo` package is hosted on `PyPI <https://pypi.org/project/plateflo>`_ and can be installed using ``pip``:
+The :mod:`.plateflo` package is hosted on `PyPI
+<https://pypi.org/project/plateflo>`_ and can be installed using ``pip``:
 
 .. code:: bash
 
@@ -29,12 +31,16 @@ The :mod:`.plateflo` package is hosted on `PyPI <https://pypi.org/project/platef
 
    python -m pip install plateflo
 
-More detailed instructions on installing Python modules can be found `here <https://docs.python.org/3/installing/index.html>`_.
+More detailed instructions on installing Python modules can be found `here
+<https://docs.python.org/3/installing/index.html>`_.
 
 Setup
 ==============
 
 Instantiate a :class:`.FETbox` object:
+
+.. code-block:: python
+
    >>> from plateflo import fetbox 
    >>> 
    >>> # Connects to a FETbox on serial port 'COM3'
@@ -46,7 +52,11 @@ device.
 .. Note::
    Device must be connected when the FETbox object is instantiated.
 
-You can automatically instantiate all connected FETboxes with :func:`.auto_connect_fetbox()`:
+You can automatically instantiate all connected FETboxes with
+:func:`.auto_connect_fetbox()`:
+
+.. code-block:: python
+
    >>> # returns a dictionary of FETbox devices, keyed by their IDs
    >>> my_fetboxes = auto_connect_fetbox()
    
@@ -54,11 +64,16 @@ You can automatically instantiate all connected FETboxes with :func:`.auto_conne
    >>> my_fetboxes[1].enable_chan(1)
 
 .. Tip::
-   When exiting from your program, call ``my_fetbox.kill()`` to close the serial
-   port and end all FETbox-associated threads running the background.
+   When exiting from your program, call :meth:`my_fetbox.kill() <.kill()>` to
+   close the serial port and end all FETbox-associated threads running in the
+   background.
 
 
-Alternatively, discover connected devices using the :func:`.scan_for_fetbox()` function,
+Alternatively, discover connected devices using the :func:`.scan_for_fetbox()`
+function,
+
+.. code-block:: python
+
    >>> # Scan systems serial ports for FETbox(es)
    >>> fetboxes = scan_for_fetbox()
 
@@ -75,6 +90,9 @@ Alternatively, discover connected devices using the :func:`.scan_for_fetbox()` f
    >>> []
 
 then instantiate using the result:
+
+.. code-block:: python
+
    >>> my_fetbox = FETbox(port = fetboxes[0]['port'])
 
 3. Usage
@@ -83,7 +101,8 @@ then instantiate using the result:
 MOSFET Output Channel Control
 ==============================
 
-There are four built-in methods for control of the FETbox's five MOSFET output channels:
+There are four built-in methods for control of the FETbox's five MOSFET output
+channels:
 
 :Enable: :meth:`enable_chan(chan) <.enable_chan()>`
 :Disable: :meth:`disable_chan(chan) <.disable_chan()>`
@@ -170,19 +189,31 @@ names are supplied as an ``int`` (e.g. ``1``), analogs pins names as ``str``
 (e.g. "A3").
 
 
-Digital readings return ``1`` for a ``HIGH`` state, or ``0`` for a ``LOW`` state.
+Digital readings return ``1`` for a ``HIGH`` state, or ``0`` for a ``LOW``
+state.
+
+.. code-block:: python
+
    >>> # Read digital pin 7 (5V signal connected)
    >>> reading = my_fetbox.digital_read(7)
    >>> print(reading)
    >>> 1
 
-Analog readings return a 10-bit value (0-1023) which corresponds to a signal voltage approximately 0-5V.
+Analog readings return a 10-bit value (0-1023) which corresponds to a signal
+voltage approximately 0-5V.
+
+.. code-block:: python
+
    >>> # Read analog pin 3 (3.3V signal connected)
    >>> reading = my_fetbox.analog_read('A3')
    >>> print(reading)
    >>> 700
 
-Digitally reading an analog pin will return the nearest state (``HIGH`` or ``LOW``) corresponding to the input signal.
+Digitally reading an analog pin will return the nearest state (``HIGH`` or
+``LOW``) corresponding to the input signal.
+
+.. code-block:: python
+
    >>> # Digital read analog pin 3 (3.3V signal connected)
    >>> reading  my_fetbox.digital_read('A3')
    >>> print(reading)

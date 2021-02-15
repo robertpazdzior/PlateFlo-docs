@@ -6,15 +6,20 @@ matrix-embedded cell lines.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Guides
+   :caption: Guide
+
+   hardware/bom
+   hardware/build_guide
+   hardware/operation
+   hardware/example_setups
+
+
+.. toctree::
+   :maxdepth: 3
+   :caption: PlateFlo Python Package
 
    software/fetbox
    software/scheduler
-
-.. toctree::
-   :maxdepth: 2
-   :caption: PlateFlo API
-
    software/API/api_index
 
 .. toctree::
@@ -23,6 +28,7 @@ matrix-embedded cell lines.
    
    legal/license
    legal/disclaimer
+
 
 Indices and tables
 ==================
