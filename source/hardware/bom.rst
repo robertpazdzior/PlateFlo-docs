@@ -1,29 +1,33 @@
 Bill of Materials (BOM)
 ########################
 
-FETbox BOM
-^^^^^^^^^^^
+BOM Tables
+^^^^^^^^^^^^^^
 
-.. csv-table::
-   :file: boms/fetbox_bom.csv
-   :widths: 10, 40, 5, 5, 10, 10, 10
-   :header-rows: 1
+.. tabs::
 
-Fluidics BOM
-^^^^^^^^^^^^
+   .. tab:: FETbox
 
-.. csv-table::
-   :file: boms/fluidics_bom.csv
-   :widths: 10, 40, 5, 5, 10, 10, 10
-   :header-rows: 1
+      .. csv-table::
+         :file: boms/fetbox_bom.csv
+         :widths: 40, 10, 10, 10, 10, 10
+         :header-rows: 1
 
-Perfusion Plate BOM
-^^^^^^^^^^^^^^^^^^^
+   .. tab:: Fluidics
 
-.. csv-table::
-   :file: boms/perfplates_bom.csv
-   :widths: 10, 40, 5, 5, 10, 10, 10
-   :header-rows: 1
+      .. csv-table::
+         :file: boms/fluidics_bom.csv
+         :widths: 40, 10, 10, 10, 10, 10
+         :header-rows: 1
+
+   .. tab:: Perfusion Plate
+
+      .. csv-table::
+         :file: boms/perfplates_bom.csv
+         :widths: 40, 10, 10, 10, 10, 10
+         :header-rows: 1
+
+:download:`Download Complete BOM <boms/plateflo_bom.csv>`
 
 .. rubric:: BOM Notes
 

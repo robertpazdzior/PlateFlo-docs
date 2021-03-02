@@ -3,12 +3,12 @@ PlateFlo - Plate Scale Perfusion System
 A modular system for programmable, plate-scale perfusion of adherent and
 matrix-embedded cell lines.
 
-
 .. toctree::
    :maxdepth: 2
-   :caption: Guide
+   :caption: Hardware
 
    hardware/bom
+   hardware/design_files
    hardware/build_guide
    hardware/operation
    hardware/example_setups

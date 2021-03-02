@@ -64,7 +64,7 @@ You can automatically instantiate all connected FETboxes with
    >>> my_fetboxes[1].enable_chan(1)
 
 .. Tip::
-   When exiting from your program, call :meth:`my_fetbox.kill() <.kill()>` to
+   When exiting from your program, call :meth:`my_fetbox.kill() <.fetbox.kill()>` to
    close the serial port and end all FETbox-associated threads running in the
    background.
 

@@ -12,9 +12,9 @@ Parts are designed and oriented optimally for fused deposition modeling (FDM) 3D
 
     * 0.4 mm extrusion width
     * 0.2 mm layer height
-    * 3 perimeters; 5 top and bottom layers
+    * 3 perimeters; 5 top/bottom layers
     * 20% infill
-    * No supports
+    * No supports required
 
     Parts that warrant special print considerations are discussed in the following sections.
 
