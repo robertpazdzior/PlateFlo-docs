@@ -1,8 +1,8 @@
 Operating Instructions
 ######################
 
-Skimmer Operation
-^^^^^^^^^^^^^^^^^
+Selecting Skimmer Height
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Appendix
 ^^^^^^^^
