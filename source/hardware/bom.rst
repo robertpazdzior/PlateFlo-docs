@@ -13,6 +13,13 @@ BOM Tables
          :widths: 40, 10, 10, 10, 10, 10
          :header-rows: 1
 
+   .. tab:: Perfusion Plate
+   
+      .. csv-table::
+         :file: boms/perfplates_bom.csv
+         :widths: 40, 10, 10, 10, 10, 10
+         :header-rows: 1
+
    .. tab:: Fluidics
 
       .. csv-table::
@@ -20,14 +27,8 @@ BOM Tables
          :widths: 40, 10, 10, 10, 10, 10
          :header-rows: 1
 
-   .. tab:: Perfusion Plate
 
-      .. csv-table::
-         :file: boms/perfplates_bom.csv
-         :widths: 40, 10, 10, 10, 10, 10
-         :header-rows: 1
-
-:download:`Download Complete BOM <boms/plateflo_bom.csv>`
+:download:`Download Full BOM <boms/plateflo_bom.csv>`
 
 .. rubric:: BOM Notes
 

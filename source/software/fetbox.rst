@@ -9,7 +9,7 @@ Convenience functions for serial control of the *PlateFlo FETbox*
 * Hit-and-hold capability for power-efficient solenoid operation
 * Full Arduino output pin control, including PWM functionality
 * Full Arduino digital and analog pin reading functionality
-* Asynchronous serial I/O for non-blocking operation via the :mod:`serial_io`
+* Asynchronous serial I/O for non-blocking operation via the :mod:`.serial_io`
   module
 * Logging via the base Python ``logging`` module
 
@@ -18,7 +18,7 @@ Convenience functions for serial control of the *PlateFlo FETbox*
 
 Installation
 ==================
-The :mod:`.plateflo` package is hosted on `PyPI
+The ``plateflo`` package is hosted on `PyPI
 <https://pypi.org/project/plateflo>`_ and can be installed using ``pip``:
 
 .. code:: bash
@@ -64,8 +64,9 @@ You can automatically instantiate all connected FETboxes with
    >>> my_fetboxes[1].enable_chan(1)
 
 .. Tip::
-   When exiting from your program, call :meth:`my_fetbox.kill() <.fetbox.kill()>` to
-   close the serial port and end all FETbox-associated threads running in the
+   When exiting from your program, call :meth:`my_fetbox.kill()
+   <.fetbox.kill()>` to close the serial port and end all FETbox-associated
+   threads running in the
    background.
 
 

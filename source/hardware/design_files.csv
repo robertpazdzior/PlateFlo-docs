@@ -1,0 +1,13 @@
+﻿Design file name,File type,Open source license,Location
+skimmer_clamp_M2.5,STL & CAD (F3Z; STEP),CERN-OHL-W,TBD
+skimmer_height_block_<height>mm.stl,STL,CERN-OHL-W,TBD
+perfusion_lid_drill_jig,STL & CAD (STEP),CERN-OHL-W,TBD
+valve_clip_base,STL & CAD (STEP),CERN-OHL-W,TBD
+fetbox_complete,"CAD (F3D, STEP)",CERN-OHL-W,TBD
+fetbox_enclosure_base,STL,CERN-OHL-W,TBD
+fetbox_enclosure_lid,STL,CERN-OHL-W,TBD
+FETbox_rev0_Gerber_JLCPCB,Gerber CAM (ZIP’ed folder),CERN-OHL-W,TBD
+FETbox_rev0_PCB,EAGLE design files (SCH + BRD),CERN-OHL-W,TBD
+Firmware_FETbox.ino,Firmware (INO),CERN-OHL-W,TBD
+plateflo,Python package,GNU-GPL3+,TBD
+ReadTheDocs,Project Documentation,CC BY-SA 4.0,TBD
