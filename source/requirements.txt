@@ -1,2 +1,3 @@
+sphinx-tabs
 pyserial
 plateflo >= 0.3.3
