@@ -114,7 +114,7 @@ In this case high variability is observed and an inlet/outlet flow delta of ~10%
 would be considered a safe operating margin.
 
 .. figure:: img/flowrate_delta_determination.png
-   :scale: 75%
+   :scale: 100%
 
    Measured dispensed volume of random combination of two pumps and four sets of
    stoppered tubing. Cassettes (sping arm for clamping stoppered tubing down
