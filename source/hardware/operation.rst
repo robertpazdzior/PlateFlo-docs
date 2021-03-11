@@ -114,7 +114,6 @@ In this case high variability is observed and an inlet/outlet flow delta of ~10%
 would be considered a safe operating margin.
 
 .. figure:: img/flowrate_delta_determination.png
-   :scale: 100%
 
    Measured dispensed volume of random combination of two pumps and four sets of
    stoppered tubing. Cassettes (sping arm for clamping stoppered tubing down
@@ -129,7 +128,7 @@ slowly (hours to days) and can therefore be removed intermittently to reduce
 power consumption and wear on the skimmer pumps/tubing.
 
 .. figure:: img/example_skimmer_pumps.jpg
-   :scale: 25%
+   :width: 600
 
    DC peristaltic pumps (wired in 2x banks of two) connected to a FETbox for
    use as skimmer pumps (upper left). Pinch valve also pictured (lower right).
@@ -193,7 +192,7 @@ single reservoir with a *FETbox* controlled skimmer pump for plate volume
 control.
 
 .. figure:: img/example_basic.jpg
-   :scale: 40%
+   :width: 500
 
    Single plate, single reservoir perfusion setup.
 
@@ -212,7 +211,7 @@ In addition to the standard inlet & outlet pumps, a third shared pump channel
 acts as the outlet pump for plate 1, pumping directly into plate two.
 
 .. figure:: img/example_multi-res_sequential.jpg
-   :scale: 40%
+   :width: 600
 
    Dual reservoir, dual sequential culture plate perfusion system.
 
@@ -238,7 +237,7 @@ for the desired plate volume. 1.6 mm is a good starting point at ~10 mL media
 in the plate.
 
 .. figure:: img/vol_std_curve.png
-   :scale: 40%
+   :width: 400
 
    Plate volume vs. skimmer nozzle height standard curve. Determined by weight.
    Mean +/- standard deviation, *n* = 3.

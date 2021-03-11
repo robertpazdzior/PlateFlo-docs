@@ -30,7 +30,7 @@ print speed, and material properties, it may be necessary to clean up the
 overhangs and bridge areas:
 
 .. figure:: img/trim_print_enclosure.png
-        :scale: 25%
+        :width: 350
 
         Areas that may require post-print clean-up to remove hanging material.
         
@@ -41,7 +41,7 @@ This part was modelled with a print-in-place sliding mechanism for securely
 clamping the P200 tip in place without potentially damaging it with bolt. 
 
 .. figure:: img/skimmer_section_PIP.PNG
-        :scale: 20%
+        :width: 500
 
         A) Skimmer clamp, assembled. B) Print-in-place clamping mechanism. Note
         how the slide does not contact the surrounding clamp body at any point
@@ -78,7 +78,7 @@ FETbox Hardware Controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: img/fetbox_render_exploded.png
-        :scale: 50%
+        :width: 400
 
         Exploded FETbox hardware controller.
 
@@ -86,12 +86,12 @@ PCB Ordering
 ============
 
 .. figure:: img/FETbox_rev0_PCB_top.png
-        :scale: 20%
+        :width: 600
 
         FETbox PCB render (top).
 
 .. figure:: img/FETbox_rev0_PCB_bottom.png
-        :scale: 20%
+        :width: 600
 
         FETbox PCB render (bottom).
 
@@ -150,12 +150,12 @@ Instructions
         (white stripe) matches that on the PCB silkscreen.
 
         .. figure:: img/soldering_1.jpg
-                :scale: 25%
+                :width: 500
 
 2.	Solder the 10kΩ pull-down resistors (R2, R4, R6, R8, R10) to the board.
 
         .. figure:: img/soldering_2.jpg
-                :scale: 25%
+                :width: 500
 
 3.	`Optional`: Current-limiting gate resistors can be added in the 
         odd-numbered resistor positions (R1, R3, R5, etc.). Though they are not
@@ -167,7 +167,7 @@ Instructions
                 positions must be bridged with solder as below.
 
                 .. figure:: img/board_solder_bridge.png
-                        :scale: 50%
+                        :width: 150
 
 4.	Solder the 3.5mm output jacks to the PCB. Note that due to the mass of
         copper around these solder pads conducting heat away, it may be
@@ -175,13 +175,13 @@ Instructions
         increase the soldering iron temperature to make a proper joint here.
 
         .. figure:: img/soldering_3.jpg
-                :scale: 25%
+                :width: 500
 
 5.	Solder the MOSFETs (Q1-Q5) to the PCB. As in the previous step, some of
         the MOSFETs pads will require more heat to make a proper joint here.
 
         .. figure:: img/soldering_4.jpg
-                :scale: 25%
+                :width: 500
 
 6.	Trim two 30-pin strips from the female headers using side cutters.
 
@@ -190,14 +190,14 @@ Instructions
         alignment and is easier to solder.
 
         .. figure:: img/soldering_5.jpg
-                :scale: 25%
+                :width: 200
 
 
 8.	Solder the decoupling capacitor (C1) to the power input of board. 
         
 
         .. figure:: img/soldering_6.jpg
-                :scale: 25%
+                :width: 350
 
         .. warning::
 
@@ -224,7 +224,7 @@ Instructions
 12.	Bend the wires into a gentle loop away from the top edge of the board.
 
         .. figure:: img/pcb_dc_jack_wiring.jpg
-                :scale: 15%
+                :width: 450
 
                 DC jack wired and soldered.
 
@@ -232,7 +232,7 @@ Instructions
         if you have not done so already.
 
         .. figure:: img/pcb_trimmed_underside.jpg
-                :scale: 10%
+                :width: 450
 
                 Soldered and trimmed leads.
 
@@ -261,14 +261,14 @@ Final Assembly
         oriented as printed on the PCB silkscreen.
 
         .. figure:: img/pcb_assembled.jpg
-                :scale: 15%
+                :width: 550
 
 5.	Insert the board at an angle into the mounting holes of the enclosure.
         The board will sit flat with the base of the enclosure once these are
         through.
 
         .. figure:: img/assembly_board_in.jpg
-                :scale: 15%
+                :width: 550
 
 6.	Secure the PCB to the enclosure bottom using four M3×8 bolts.
 
@@ -276,7 +276,7 @@ Final Assembly
         output jacks. Do not overtighten the nuts on the output jacks.
 
         .. figure:: img/fetbox_assembled.jpg
-                :scale: 15%
+                :width: 550
 
 8.	Snap the enclosure lid in place with the convective cooling slots over
         the MOSFET array and Arduino.
@@ -331,7 +331,7 @@ Skimmer Nozzle Clamp
 ====================
 
 .. figure:: img/skimmer_clamp_parts.jpg
-        :scale: 25%
+        :width: 400
 
         Parts, from left to right: printed ``skimmer_clamp_M2.5.stl``, 
         M2.5 hex nut, M2.5×8mm bolt.
@@ -339,7 +339,7 @@ Skimmer Nozzle Clamp
 1.	Insert the M2.5 hex nut and thread in the M2.5 bolt until finger tight.
 
         .. figure:: img/skimmer_clamp_fingertight.jpg
-                :scale: 25%
+                :width: 300
 
 .. _nozzle-clamp-pip:
 
@@ -348,7 +348,7 @@ Skimmer Nozzle Clamp
         of motion (below, right).
 
         .. figure:: img/skimmer_clamp_slide.jpg
-                :scale: 25%
+                :width: 400
 
                 **Left:** Twist sharply to break the weak connection on the
                 slide underside. 
@@ -361,7 +361,7 @@ Skimmer Nozzle Clamp
         starting position.
 
         .. figure:: img/skimmer_clamp_slidereturn.jpg
-                :scale: 15%
+                :width: 550
 
                 **Left**: use the screwdriver as a lever to push the slide back,
                 there may be resistance the first time the slide moves.
@@ -375,13 +375,13 @@ Perfusion Plate Lid
         four nozzle hole locations to the Nunc OmniTray lid.
 
         .. figure:: img/lid_tools.jpg
-                :scale: 15%
+                :width: 600
 
         .. figure:: img/lid_marking_jig.jpg
-                :scale: 15%
+                :width: 600
 
         .. figure:: img/lid_marking_marked.jpg
-                :scale: 15%
+                :width: 600
 
 #.	Using a 2.2mm\ [*]_ PCB milling bit/tool, drill all four marked holes.
 
@@ -391,12 +391,12 @@ Perfusion Plate Lid
                 hole dimensional accuracy and consistency.
 
         .. figure:: img/lid_drilling.jpg
-                :scale: 15%
+                :width: 600
 
 #.	Clean all plastic debris from the lid and wipe with 70% EtOH.
 
         .. figure:: img/lid_drilled.jpg
-                :scale: 15%
+                :width: 600
 
 #.	Apply a small amount of cyanoacrylate glue to the bottom of a skimmer
         nozzle clamp.
@@ -405,7 +405,7 @@ Perfusion Plate Lid
         press firmly, then allow to cure.
 
         .. figure:: img/skimmer_clamp_hole_alignment.jpg
-                :scale: 25%
+                :width: 350
 
                 Align the drilled hole with the edge of the clamp hole farthest
                 from the slide and bolt. This will prevent pinching if the hole
@@ -435,7 +435,7 @@ Perfusion Plate Lid
 
 
         .. figure:: img/ortho_skimmer_height_setting.jpg
-                :scale: 15%
+                :width: 400
         
                 **A**: Skimmer nozzle P200.
                 **B**: Skimmer height block.
@@ -476,7 +476,7 @@ Perfusion Plate Lid
         .. _outlet-tubing:
 
         .. figure:: img/outlet_tubing.jpg
-                :scale: 50%
+                :width: 600
 
                 Outlet tubing assembled.
 

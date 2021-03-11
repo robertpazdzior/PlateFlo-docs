@@ -2,12 +2,13 @@ PlateFlo - Plate Scale Perfusion System
 =======================================
 A modular system for programmable, plate-scale perfusion of adherent cell lines.
 
-This is documentation is written to accompany **<publication link
+---------------------------------------
+
+This documentation is written to accompany **<publication link
 placeholder>**. See peer-reviewed article for detailed description and
 characterization of the hardware.
 
 .. figure:: hardware/img/graphical_abstract_wPlate.png
-   :scale: 35%
    
    **Left** Schematic overview of a multi-plate multi-reservoir perfusion setup
    controlled programmatically using the PlateFlo python package.
@@ -24,7 +25,7 @@ characterization of the hardware.
    hardware/operation
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: PlateFlo Python Package
 
    software/fetbox
