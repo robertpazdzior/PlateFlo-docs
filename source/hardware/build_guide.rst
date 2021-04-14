@@ -1,8 +1,8 @@
 Build Guide
 ###########
 
-3D Printing Guidelines
-^^^^^^^^^^^^^^^^^^^^^^
+1. 3D Printing Guidelines
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Parts are designed and oriented optimally for fused deposition modeling (FDM) 3D
 printing. Parts pictured in proceeding sections were printed on a Prusa i3 MK3S
@@ -74,8 +74,8 @@ nozzle height) is particularly sensitive to first layer height calibration and
 it is recommended that the printed height be validated with a micrometer, high
 quality calipers, or more empirically by measuring the residual plate volume.
 
-FETbox Hardware Controller
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+2. FETbox Hardware Controller
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: img/fetbox_render_exploded.png
         :width: 400
@@ -288,12 +288,12 @@ The FETbox controller firmware is supplied as an Arduino ‘sketch’ for upload
 via the :program:`Arduino IDE` software. 
 
 1.	Install the :program:`Arduino IDE` software and USB drivers per the
-        instructions for your system [7]. 
+        `instructions <https://www.arduino.cc/en/Guide>`_ for your system. 
 
 2.	Connect the hardware controller using a USB mini-B cable. 
 
-3.	Open the hardware controller sketch, ``Firmware_FETbox.ino`` with
-        :program:`Arduino IDE`. 
+3.	Open the hardware controller sketch, `Firmware_FETbox.ino
+        <https://osf.io/u2x6v/>`_, with :program:`Arduino IDE`. 
 
 4.	Set the target board, processor and serial port:
         
@@ -318,14 +318,14 @@ via the :program:`Arduino IDE` software.
         b.	Set the line ending to ``Newline`` and the baud rate to 
                 ``115200``.
 
-        c.	Type ``@#`` into the serial monitor and press Send or
-                :kbd:`Return`. 
+        c.	Type ``@#`` into the serial monitor and press Send or hit the
+                :kbd:`Return` key. 
 
 If the sketch was successfully uploaded, the board will respond with ``fetbox0``
 in the serial monitor.
 
-Nunc OmniTray Perfusion Plate
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Perfusion Plate
+^^^^^^^^^^^^^^^^^^
 
 Skimmer Nozzle Clamp
 ====================

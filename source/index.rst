@@ -2,6 +2,9 @@ PlateFlo - Plate Scale Perfusion System
 =======================================
 A modular system for programmable, plate-scale perfusion of adherent cell lines.
 
+File Repository: `OSF (Open Science Foundation)
+<https://doi.org/10.17605/OSF.IO/PYJCH>`_
+
 ---------------------------------------
 
 This documentation is written to accompany **<publication link

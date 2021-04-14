@@ -1,19 +1,19 @@
 Operating Instructions
 ######################
 
-System Setup
-^^^^^^^^^^^^
+1. System Setup
+^^^^^^^^^^^^^^^
 
 Instructions here are generalized as much as possible. Several schematic
-`Example Perfusion Setups`_ illustrate the tubing connections and some
-potentially intersting experimental configurations.
+:ref:`example setups <example_setups>` illustrate the tubing connections and some
+potentially interesting experimental configurations.
 
 General Guidelines
 ==================
 
 *	The inlet/outlet pumps, media reservoirs, and fluidic tubing
         upstream of culture plates should be kept in the culture incubator
-        with the plates to avoid degassing in the tubing.
+        with the perfusion plates to avoid degassing in the tubing.
 
 *	Skimmer pumps, FETbox(es), and the waste reservoir can be
         placed exterior to the incubator. 
@@ -26,7 +26,7 @@ General Guidelines
 *	Preheat the inlet/outlet peristaltic pumps in a dry incubator/oven
         several degrees higher than the final target temperature. This will
         minimize formation of potentially damaging condensation on the
-        electronic and mechanical components.
+        electronics and mechanical components.
 
 Sterilization & Priming
 =======================
@@ -38,19 +38,21 @@ to the tubing already connected to the plate.
 
 1.	Connect a 70% EtOH bottle to all reservoir connections.
 
-2.	Disengage the outlet pump tubing such that the inlet pumps can pump
-        freely all the way to the waste.
+2.	Disengage the outlet pump tubing from the pump rollers, such that the 
+        inlet pumps can pump freely all the way to the waste.
 
 3.	Run the inlet pump at full speed until at least several volumes have
-        passed through the fluid circuit.
+        passed through all of the tubing.
         
         .. important::
                 If using pinch valves in the circuit, cycle their positions
-                regularly to ensure full EtOH penetration.
+                regularly to ensure full EtOH contact.
 
-4.	Connect all reservoir inlets to their final culture media reservoirs.
+4.	Disconnected EtOH reservoir, and connect the inlet tubing to all culture
+        media reservoirs.
 
-5.	Repeat (3) to purge EtOH from the system and prime with media. 
+5.	Repeat (3) with media to purge EtOH from the system and prime the
+        tubing with culture medium. 
 
         .. note:: 
                 
@@ -58,20 +60,21 @@ to the tubing already connected to the plate.
                 downstream of the valves contains the correct medium for the
                 start of the experiment.
 
-6.	Engage all peristaltic pump head clamps to prevent backflow and spillage
-        when connecting the plates later.
+6.	Engage all peristaltic pump head to prevent backflow and avoid spillage
+        when connecting the perfusion plates later.
 
 7.	Sterilize the skimmer tubing by pumping 70% EtOH through, then run dry
         to clear. Wrap exposed tubing ends in sterilized aluminum foil until
-        ready to connect to perfusion plate.
+        ready to connect to the perfusion plate.
 
 Perfusion Plate Connection
 ==========================
 
-#.	Seed an unaltered Nunc OmniTray plate with the desired tissue culture
+#.	Seed an Nunc OmniTray plate with the desired tissue culture
         model. Allow cells sufficient time to adhere prior to initiating flow.
 
-#.	In the tissue culture cabinet, place the assembled and sterilized
+#.	In the tissue culture cabinet, place the :ref:`assembled and sterilized
+        <hardware/build_guide:Perfusion Plate Lid>`  
         perfusion lid onto the seeded plate base. Verify that the inlet/outlet
         nozzles sit below the media surface and do not ride on the culture
         surface.
@@ -89,12 +92,14 @@ Perfusion Plate Connection
 
 #.	The system is now ready for operation.
 
-Inlet/Outlet Flow Rate Delta
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _`flow_delta`:
+
+2. Inlet/Outlet Flow Rate Delta
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The "skimming" approach we've taken to plate volume regulation requires a
-slightly inlet flow rate than outlet flow rate, with the excess removed in a
-controlled way by the skimmer system. The inlet/outlet flow rate delta
+slightly higher inlet flow rate than outlet flow rate, with the excess removed
+in a controlled way by the skimmer system. The inlet/outlet flow rate delta
 should be kept as small as possible to minimize volume fluctuation.
 
 To determine a safe operating flow rate delta, variability of the
@@ -120,8 +125,8 @@ would be considered a safe operating margin.
    against the rollers) were kept with their original pumps. n = 3 for each
    data point.
 
-Skimmer Pumps
-^^^^^^^^^^^^^
+3. Skimmer Pump Operation
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Skimmer pumps do not need to be run continuously. Excess medium accumulates
 slowly (hours to days) and can therefore be removed intermittently to reduce
@@ -179,10 +184,11 @@ pumps at regular intervals as below, for example:
    >>>         main()
    >>>   finally:
    >>>      fet.kill()
-
-
-Example Perfusion Setups
-^^^^^^^^^^^^^^^^^^^^^^^^
+   
+.. _`example_setups`:
+   
+4. Example Perfusion Setups
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Single Plate, Single Reservoir Culture
 ======================================
@@ -217,8 +223,9 @@ acts as the outlet pump for plate 1, pumping directly into plate two.
 
 .. note::
    
-   In this configuration, the `Inlet/Outlet Flow Rate Delta`_ is maintained
-   across **all three pumps**. I.e. flow rate 1 > 2 > 3, from left to right.
+   In this configuration, the :ref:`inlet/outlet flow rate delta <flow_delta>`
+   is maintained across **all three pumps**. I.e. flow rate 1 > 2 > 3, from left
+   to right.
 
 This setup could be of use, for example, when studying the effect of subjecting
 *cell line 2* to secreted factors from *cell line 1* upon stimulation with small
@@ -226,8 +233,8 @@ molecules from *reservoir B*. Similarly, it may be used for development of
 co-culture differentiation protocols.
 
 
-Appendix
-^^^^^^^^
+5. Appendix
+^^^^^^^^^^^
 
 Selecting Skimmer Height
 ========================
