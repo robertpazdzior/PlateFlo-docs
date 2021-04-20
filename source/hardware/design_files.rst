@@ -6,10 +6,10 @@ Design Files
     :widths: 25,25,25,25
     :header-rows: 1
 
-**skimmer_clamp_M2.5**
+**skimmer_clamp_M3**
     Print-in-place skimmer nozzle clamping mechanism. Fixed atop a drilled Nunc
     OmniTray lid to allow precise positioning of the skimmer nozzle tip height.
-    CAD files include modelled M2.5 fastener hardware as assembled.
+    CAD files include modelled M3 fastener hardware as assembled.
 **perfusion_lid_drill_jig**
     A guide for marking hole locations on Nunc® OmniTray® lids for drilling.
     Slides over top of the lid with holes for a fine-tipped marker.

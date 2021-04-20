@@ -45,7 +45,7 @@ Required Tools
 * Soldering iron
 * Flux-core solder
 * Side cutters or similar (e.g. Knipex 78 61 125)
-* Hex wrenches, 2 mm and 2.5 mm
+* 2.5 mm hex wrench
 
 Optional Tools/Components
 ^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -333,17 +333,17 @@ Skimmer Nozzle Clamp
 .. figure:: img/skimmer_clamp_parts.jpg
         :width: 400
 
-        Parts, from left to right: printed ``skimmer_clamp_M2.5.stl``, 
-        M2.5 hex nut, M2.5×8mm bolt.
+        Parts, from left to right: printed ``skimmer_clamp_M3.stl``, 
+        M3 hex nut, M3 bolt.
 
-1.	Insert the M2.5 hex nut and thread in the M2.5 bolt until finger tight.
+1.	Insert the M3 hex nut and thread in the M3 bolt until finger tight.
 
         .. figure:: img/skimmer_clamp_fingertight.jpg
                 :width: 300
 
 .. _nozzle-clamp-pip:
 
-2.	Using a 2 mm hex driver, tighten sharply until the slide breaks free,
+2.	Using a 2.5 mm hex wrench, tighten sharply until the slide breaks free,
         then continue until the clamp slide has moved through its entire range
         of motion (below, right).
 
@@ -460,8 +460,8 @@ Perfusion Plate Lid
                 skimmer P200, as in the figure above.
 
         e.	While holding the P200 in position, tighten the nozzle clamp
-                bolt using a 2 mm hex wrench until the P200 barrel deforms just
-                slightly.
+                bolt using a 2.5 mm hex wrench until the P200 barrel deforms
+                *slightly*.
 
         f.	Verify the skimmer nozzle position has not changed during
                 clamp tightening
