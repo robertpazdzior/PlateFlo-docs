@@ -2,6 +2,7 @@
 skimmer_clamp_M3,STL & CAD (F3Z; STEP),CERN-OHL-W,https://doi.org/10.17605/OSF.IO/PYJCH
 skimmer_height_block_<height>mm.stl,STL,CERN-OHL-W,https://doi.org/10.17605/OSF.IO/PYJCH
 perfusion_lid_drill_jig,STL & CAD (STEP),CERN-OHL-W,https://doi.org/10.17605/OSF.IO/PYJCH
+petri_drill_jig_<size>_<inlet/outlet>,STL & CAD (STEP),CERN-OHL-W,https://doi.org/10.17605/OSF.IO/PYJCH
 valve_clip_base,STL & CAD (STEP),CERN-OHL-W,https://doi.org/10.17605/OSF.IO/PYJCH 
 fetbox_complete,"CAD (F3D, STEP)",CERN-OHL-W,https://doi.org/10.17605/OSF.IO/CRJVB
 fetbox_enclosure_base,STL,CERN-OHL-W,https://doi.org/10.17605/OSF.IO/CRJVB

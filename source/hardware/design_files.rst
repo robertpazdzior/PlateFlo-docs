@@ -13,6 +13,10 @@ Design Files
 **perfusion_lid_drill_jig**
     A guide for marking hole locations on Nunc® OmniTray® lids for drilling.
     Slides over top of the lid with holes for a fine-tipped marker.
+**petri_drill_jig_<size>_<inlet/outlet>**
+    As above, but for alternative petri dish culture chambers. Two pieces, inlet
+    and outlet sides, that slide together to accommodate variability in petri
+    dish dimension between manufacturers. 
 **valve_clip_base**
     Simple stand for the BOM pinch valve clip. Holds the valve horizontal for
     use on e.g. an incubator shelf.

@@ -6,7 +6,19 @@ Build Guide
 
 Parts are designed and oriented optimally for fused deposition modeling (FDM) 3D
 printing. Parts pictured in proceeding sections were printed on a Prusa i3 MK3S
-3D printer in “Galaxy Black” or "Azure Blue" Prusament PLA. 
+3D printer in “Galaxy Black” or "Azure Blue" Prusament PLA.
+
+If a 3D printer is not available there are many 3D printing services available,
+e.g. ShapeWays in the US, or Xometry in the EU, that will ship parts directly to
+you and offer online quotes after uploading the STLs. If ordering through a
+service, it's recommended to order as many of the consumable skimmer clamps as
+possible to avoid re-ordering later on.
+
+For 3D printing services we recommend:
+   * Type/technology: FDM/FFF
+   * Material: PLA
+   * Layer height (sometimes called resolution): 0.1-0.2 mm
+   * No support material
 
 .. sidebar:: Print Settings
 
@@ -17,7 +29,7 @@ printing. Parts pictured in proceeding sections were printed on a Prusa i3 MK3S
     * 0.2 mm layer height
     * 3 perimeters; 5 top/bottom layers
     * 20% infill
-    * No supports required
+    * No supports
 
     Parts that warrant special print considerations are discussed in the
     following sections.
@@ -74,7 +86,7 @@ nozzle height) is particularly sensitive to first layer height calibration and
 it is recommended that the printed height be validated with a micrometer, high
 quality calipers, or more empirically by measuring the residual plate volume.
 
-2. FETbox Hardware Controller
+1. FETbox Hardware Controller
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: img/fetbox_render_exploded.png
@@ -371,7 +383,10 @@ Skimmer Nozzle Clamp
 Perfusion Plate Lid
 ===================
 
-#.	Using the perfusion_plate_jig and a fine-tipped marker, transfer the
+See :ref:`hardware/build_guide:Petri Dish Perfusion Lid` for notes on building
+the perfusion plate using a petri dish, rather than the recommended OmniTray.
+
+#.	Using the ``perfusion_lid_drill_jig`` and a fine-tipped marker, transfer the
         four nozzle hole locations to the Nunc OmniTray lid.
 
         .. figure:: img/lid_tools.jpg
@@ -490,6 +505,55 @@ Perfusion Plate Lid
 .. [*] Tip trimming is necessary if a hole diameter is not found that
         results in a tight fit *and* adequate clearance from the plate bottom,
         as described :ref:`above <tip-fit>`.
+
+Petri Dish Perfusion Lid
+========================
+
+6, 10, and 15 cm petri dishes are likely a viable alternative to the rectangular
+OmniTray, having poorer overall flow characteristics but better availability and
+variety of size. See the Discussion section in the text, as well as
+Supplementary Figure 3 for details.
+
+Select the appropriate lid marking jig for the desired petri dish size:
+``petri_drill_jig_<size>_inlet`` and ``petri_drill_jig_<size>_outlet``.
+
+#.	Petri dish marking jigs consist of two parts that slide into one
+        another after printing. This provides some adjustment range to
+        accomodate dimensional variabiation between manufacturers.
+        
+        Assemble the printed jig.
+
+        .. figure:: img/petri_jig_assembled.jpg
+                :width: 450
+
+                Assembled 10 cm petri lid marking jig.
+
+#.      Place the jig atop the plate lid, and while gently holding the two
+        halves together for proper alignment, transfer all four hole locations
+        with a marker.
+
+        .. figure:: img/petri_jig_on_plate.jpg
+                :width: 450
+                
+                Transferring hole locations to a 10 cm petri lid.
+
+        .. figure:: img/petri_marked.jpg
+                :width: 450
+
+                All four nozzle hole locations marked in black ink.
+
+#.      With the hole locations marked, remove the lid from the dish and carry
+        on with the build instructions from step 2 in
+        :ref:`hardware/build_guide:Perfusion Plate Lid` above.
+
+        .. Important:: 
+                As petri dishes are generally deeper/taller than the OmniTray,
+                **larger diameter holes** will likely be necessary to fully
+                insert the nozzles.
+
+                Similarly, the **skimmer nozzle height** will need to be set
+                higher than in the OmniTray to achieve an equivalent media
+                volume.
 
 .. rubric:: References
 
