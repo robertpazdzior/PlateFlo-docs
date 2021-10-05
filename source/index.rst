@@ -7,9 +7,12 @@ File Repository: `OSF (Open Science Foundation)
 
 ---------------------------------------
 
-This documentation is written to accompany **<publication link
-placeholder>**. See peer-reviewed article for detailed description and
-characterization of the hardware.
+This documentation is written to accompany `PlateFlo – A software-controllable
+plate-scale perfusion system for culture of adherent cells
+<https://doi.org/10.1016/j.ohx.2021.e00222>`_, published in `HardwareX
+<https://www.sciencedirect.com/journal/hardwarex>`_ (Oct 2021). See the
+peer-reviewed article for a detailed description and contextualization of the
+hardware.
 
 .. figure:: hardware/img/graphical_abstract_wPlate.png
    
